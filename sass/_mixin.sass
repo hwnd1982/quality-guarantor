@@ -33,3 +33,16 @@
   @content
   &>:not(:last-child)
     margin-bottom: $space
+
+@mixin text-line-overflow($count)
+  overflow: hidden
+  display: -webkit-box
+  -webkit-line-clamp: $count
+  -webkit-box-orient: vertical
+
+@mixin color($color)
+  background-image: conic-gradient(from 60deg at 50% 50%, $color 0%, rgba($color, .67) 14.3561%, $color 32.5364%, rgba($color, .87) 48.7974%, rgba($color, .6) 62.86%, rgba($color, .83) 79.99%, $color 100%)
+
+@mixin lg
+  @media (min-width: 1366px)
+    @content

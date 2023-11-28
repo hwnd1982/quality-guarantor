@@ -1,0 +1,63 @@
+.about
+  padding: 120px 0
+  &__list
+    width: 100%
+    margin: 0
+    padding: 0
+    list-style: none
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-auto-rows: 1fr
+    gap: 40px
+  &__item
+    position: relative
+    padding: 88px
+    overflow: hidden
+    border-radius: 32px
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: -1
+      background: linear-gradient(0deg, #242424 22.35%, rgba(36, 36, 36, 0.00) 102.17%)
+  &__img
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: -2
+    object-fit: cover
+    object-position: top
+    max-width: 100%
+    width: 100%
+    height: auto
+  &__title
+    font-size: 36px
+    font-weight: 700
+    line-height: calc( 40 / 36)
+    color: #fff
+    margin: 0 0 32px
+  &__text
+    font-size: 24px
+    font-weight: 500
+    line-height: 1.5
+    color: #fff
+    opacity: .7
+    &:not(:last-child)
+      margin-bottom: 16px
+  &__doc
+    color: #fff
+    &-icon
+      width: 36px
+      height: 49px
+      vertical-align: middle
+      margin-right: 16px
+    &-text
+      font-size: 24px
+      line-height: calc(32 / 24)
+      border-bottom: 1px solid #fff
+      vertical-align: middle

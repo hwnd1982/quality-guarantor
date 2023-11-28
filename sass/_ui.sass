@@ -23,3 +23,35 @@
 .prime
   color: #fff
   background-color: #2E70F0
+
+.color
+  width: 40px
+  height: 40px
+  padding: 4px
+  appearance: none
+  border-radius: 50%
+  &::after
+    content: ''
+    display: block
+    width: 32px
+    height: 32px
+    color: #E5E2D7
+    border-radius: 50%
+    box-shadow: 0 0 0 2.5px white, 0 0 0 3.5px currentColor
+    transition: .3s
+  &:hover::after
+    color: #2E70F0
+  &:active::after, &:checked::after
+    color: #000
+
+.gold
+  &::after
+    +color(#956C02)
+
+.silver
+  &::after
+    +color(#898989)
+
+.cupric
+  &::after
+    +color(#720606)

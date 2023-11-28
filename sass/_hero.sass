@@ -22,9 +22,25 @@
   border: none
   padding: 0
   background-color: #fff0
-  &-icon
+  cursor: pointer
+  transition: .3s
+  &:hover
+    color: #2E70F0
+  &:active
+    color: #1C479B
+  &-wrap
     position: relative
-    width: 119px
+    overflow: hidden
+    width: 120px
+    height: 43px
+    transition: .3s
+  &:active > &-wrap
+    width: 80px
+  &-icon
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 120px
     height: 43px
     z-index: 50
   &::after
@@ -38,13 +54,18 @@
     z-index: 1
     transition: .3s
 
+.swiper-btn-left .swiper-btn-icon
+  left: 0
+.swiper-btn-right .swiper-btn-icon
+  right: 0
+
 .swiper-btn-left
   &::after
     left: 50%
     transform: translate(-105%, -50%)
   &:active
     &::after
-      transform: scale(.6) translate(-145%, -83.3333%)
+      transform: scale(.6) translate(-135%, -83.3333%)
 
 .swiper-btn-right
   &::after
@@ -52,4 +73,4 @@
     transform: translate(105%, -50%)
   &:active
     &::after
-      transform: scale(.6) translate(145%, -83.3333%)
+      transform: scale(.6) translate(135%, -83.3333%)

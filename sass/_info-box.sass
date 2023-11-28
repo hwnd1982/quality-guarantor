@@ -1,0 +1,89 @@
+.info-box
+  position: absolute
+  text-align: left
+  max-width: 275px
+  &_position
+    &_right-bottom
+      top: 45%
+      right: -180px
+    &_left-top
+      top: 89px
+      left: -42%
+    &_left-bottom
+      bottom: 180px
+      left: -42%
+
+  &_position_left-top.type-a > &__title
+    &::before
+      background-image: url(../img/line-left-top-type-a.svg#xl)
+      width: 256px
+      height: 58px
+  &_position_left-top.type-b > &__title
+    &::before
+      background-image: url(../img/line-left-top-type-b.svg#xl)
+      width: 157px
+      height: 77px
+
+  &_position_left-top > &__title
+    margin-bottom: 16px
+    &::before
+      bottom: 18px
+      right: 118px
+      transform: translate(100%, 100%)
+
+  &_position_left-bottom.type-a > &__title
+    &::before
+      background-image: url(../img/line-left-bottom-type-a.svg#xl)
+      width: 257px
+      height: 58px
+
+  &_position_left-bottom > &__title
+    margin-bottom: 0
+    &::before
+      bottom: 25px
+      right: 50px
+      transform: translate(100%, 100%)
+
+  &_position_right-bottom.type-a > &__title
+    &::before
+      background-image: url(../img/line-right-bottom-type-a.svg#xl)
+
+  &_position_right-bottom > &__title
+    &::before
+      bottom: 18px
+      left: -18px
+      width: 146px
+      height: 69px
+      transform: translateX(-100%)
+
+  &__title
+    position: relative
+    font-size: 32px
+    font-weight: 700
+    line-height: 1.125
+    margin: 0 0 4px
+    &::before
+      content: ''
+      position: absolute
+      background-size: contain
+      background-repeat: no-repeat
+
+  &__subtitle
+    font-size: 20px
+    line-height: 1.4
+    margin: 0 0 16px
+  &__list
+    list-style: none
+    padding: 0
+    margin: 0
+    +space-v(4px)
+  &__item
+    &::before
+      content: ''
+      display: inline-block
+      background-image: url(../img/check.svg)
+      background-size: contain
+      background-repeat: no-repeat
+      width: 14px
+      height: 12px
+      margin-right: 12px

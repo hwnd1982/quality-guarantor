@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      g {
+        display: none;
+      }
+
+      g:target {
+        display: inline;
+      }
+    </style>
+  </defs>
+  <g
+    viewBox="0 0 147 69"
+    fill="none"
+    id="xl"
+  >
+    <path
+      opacity="0.3"
+      d="M147 68C71 68 7.5 39 1 1"
+      stroke="black"
+      stroke-width="2"
+      stroke-dasharray="8 9"
+    />
+  </g>
+  <g
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 113 53"
+    fill="none"
+    id="lg"
+  >
+    <path
+      opacity="0.3"
+      d="M113 52C58.5 52 17 31.5 1 1"
+      stroke="black"
+      stroke-width="2"
+      stroke-dasharray="8 9"
+    />
+  </g>
+  <g
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 92 75"
+    fill="none"
+    id="md"
+  >
+    <path
+      opacity="0.3"
+      d="M91.5 74C44.2991 74 1 41 1 0"
+      stroke="black"
+      stroke-width="2"
+      stroke-dasharray="8 9"
+    />
+  </g>
+  <g
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 12 39"
+    fill="none"
+    id="sm"
+  >
+    <path
+      opacity="0.3"
+      d="M10.5 38C4.49997 29.5 -1.00001 11.5 2.38395 1.00001"
+      stroke="black"
+      stroke-width="2"
+      stroke-dasharray="8 9"
+    />
+  </g>
+</svg>

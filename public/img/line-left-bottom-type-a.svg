@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      g {
+        display: none;
+      }
+
+      g:target {
+        display: inline;
+      }
+    </style>
+  </defs>
+  <g
+    viewBox="0 0 237 58"
+    fill="none"
+    id="xl"
+  >
+    <path
+      opacity="0.3"
+      d="M0.5 3C56 -2.50002 93.0646 12.3862 118.5 27.5C153 48 183.5 63.5 236.5 52.5"
+      stroke="black"
+      stroke-width="2"
+      stroke-dasharray="8 9"
+    />
+  </g>
+  <g
+    viewBox="0 0 158 30"
+    fill="none"
+    id="lg"
+  >
+    <path
+      opacity="0.3"
+      d="M0.5 8.49993C62 -19.5 85.5 45.5 157 23.5833"
+      stroke="black"
+      stroke-width="2"
+      stroke-dasharray="8 9"
+    />
+  </g>
+  <g
+    fill="none"
+    id="md"
+  >
+
+  </g>
+  <g
+    fill="none"
+    id="sm"
+  >
+
+    />
+  </g>
+</svg>

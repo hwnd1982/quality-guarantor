@@ -1,0 +1,22 @@
+.header
+  background-color: #F4F2EF
+  &__container
+    display: grid
+    grid-template-areas: 'logo nav popup-btn'
+    grid-template-columns: max-content 1fr max-content
+    align-items: center
+  &__logo
+    grid-area: logo
+    display: flex
+    font-size: 14px
+    align-items: center
+    flex-shrink: 0
+    max-width: 286px
+    text-decoration: none
+    color: #000
+
+    &-icon
+      width: 163px
+      height: 56px
+      border-right: 1px solid #0007
+      color: #1B1918

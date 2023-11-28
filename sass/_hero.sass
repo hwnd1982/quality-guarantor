@@ -1,0 +1,51 @@
+.hero
+  overflow: hidden
+  &__swiper
+    overflow: visible
+
+.swiper-controls
+  position: absolute
+  height: 0
+  top: 400px
+  left: 0
+  right: 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.swiper-btn
+  position: relative
+  border: none
+  padding: 0
+  background-color: #fff0
+  &-icon
+    position: relative
+    width: 119px
+    height: 43px
+    z-index: 50
+  &::after
+    position: absolute
+    top: 50%
+    content: ''
+    height: 325px
+    width: 325px
+    background-color: #F4F2EF
+    border-radius: 50%
+    z-index: 1
+    transition: .3s
+
+.swiper-btn-left
+  &::after
+    left: 50%
+    transform: translate(-105%, -50%)
+  &:active
+    &::after
+      transform: scale(.6) translate(-145%, -83.3333%)
+
+.swiper-btn-right
+  &::after
+    right: 50%
+    transform: translate(105%, -50%)
+  &:active
+    &::after
+      transform: scale(.6) translate(145%, -83.3333%)

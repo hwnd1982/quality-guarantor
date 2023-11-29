@@ -1,0 +1,50 @@
+.communication
+  position: relative
+  padding: 64px 0 120px
+  &::before
+    content: ''
+    position: absolute
+    top: 64px
+    left: 0
+    right: calc(100% - (100% - 1740px) / 2)
+    bottom: 120px
+    background: #2E70F0
+    z-index: 5
+  &__container
+    position: relative
+    padding-top: 80px
+    padding-bottom: 80px
+    z-index: 1
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 336px
+      bottom: 0
+      border-radius: 0px 32px 32px 0px
+      background: #2E70F0
+      z-index: -1
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      border-radius: 0px 32px 32px 0px
+      background-color: #F4F2EF
+      z-index: -2
+  &__img
+    position: absolute
+    right: 0
+    top: 8px
+    bottom: 0
+    max-height: calc(100% - 8px)
+    object-fit: contain
+  &__title
+    color: #fff
+    font-size: 88px
+    font-weight: 700
+    line-height: calc(96 / 88)
+    margin: 0 0 40px

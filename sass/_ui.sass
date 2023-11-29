@@ -1,3 +1,12 @@
+.link
+  text-decoration: none
+  color: #000
+  transition: .3s
+  &:hover
+    color: #2E70F0
+  &:active
+    color: #1C479B
+
 .button
   font-style: normal
   font-weight: 700
@@ -23,6 +32,11 @@
 .prime
   color: #fff
   background-color: #2E70F0
+
+.black
+  color: #fff
+  background-color: #000
+  border-color: #000
 
 .color
   width: 40px
@@ -50,8 +64,28 @@
 
 .silver
   &::after
-    +color(#898989)
+    +color(#AEAEAE)
 
 .cupric
+  &::after
+    +color(#A2472E)
+
+.bronze
+  &::after
+    +color(#985C38)
+
+.black
+  &::after
+    +color(#000)
+
+.chrome
+  &::after
+    +color(#CECDCD)
+
+.white
+  &::after
+    +color(#ECEAE4)
+
+.red
   &::after
     +color(#720606)

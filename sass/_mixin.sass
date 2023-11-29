@@ -40,8 +40,12 @@
   -webkit-line-clamp: $count
   -webkit-box-orient: vertical
 
+// @mixin color($color)
+//   background-image: conic-gradient(from 60deg at 50% 50%, $color 0%, rgba($color, .67) 14.3561%, $color 32.5364%, rgba($color, .87) 48.7974%, rgba($color, .6) 62.86%, rgba($color, .83) 79.99%, $color 100%)
+
 @mixin color($color)
-  background-image: conic-gradient(from 60deg at 50% 50%, $color 0%, rgba($color, .67) 14.3561%, $color 32.5364%, rgba($color, .87) 48.7974%, rgba($color, .6) 62.86%, rgba($color, .83) 79.99%, $color 100%)
+  background-image: conic-gradient(from 60deg at 50% 50%, #fff0 0%, #ffffff99 17.7083%, #fff0 32.5364%, #ffffff2E 48.7974%, #ffffff78 62.8604%, #fff0 81.7708%, #ffffff06 100%)
+  background-color: $color
 
 @mixin lg
   @media (min-width: 1366px)

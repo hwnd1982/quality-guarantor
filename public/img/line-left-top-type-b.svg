@@ -6,14 +6,27 @@
       }
 
       g:target {
-        display: inline;
+        display: block;
       }
     </style>
   </defs>
   <g
-    viewBox="0 0 157 77"
+    viewBox="0 0 197 77"
     fill="none"
     id="xl"
+  >
+    <path
+      opacity="0.3"
+      d="M1 1.77426C89 -7.49992 90 83.5001 196 75.5001"
+      stroke="black"
+      stroke-width="2"
+      stroke-dasharray="8 9"
+    />
+  </g>
+  <g
+    viewBox="0 0 157 77"
+    fill="none"
+    id="lg"
   >
     <path
       opacity="0.3"

@@ -2,16 +2,14 @@
   position: absolute
   text-align: left
   max-width: 275px
+  transition: 0.8s
   &_position
     &_right-bottom
-      top: 43.5%
-      right: -148px
+      top: 39.5%
     &_left-top
       top: 89px
-      left: -51%
     &_left-bottom
-      bottom: 180px
-      left: -42%
+      bottom: 40%
 
   &_position_left-top.type-a > &__title
     &::before
@@ -22,7 +20,7 @@
   &_position_left-top.type-b > &__title
     &::before
       background-image: url(../img/line-left-top-type-b.svg#xl)
-      width: 157px
+      width: 197px
       height: 77px
 
   &_position_left-top > &__title
@@ -36,13 +34,13 @@
     &::before
       background-image: url(../img/line-left-bottom-type-a.svg#xl)
       width: 257px
-      height: 58px
+      height: 78px
 
   &_position_left-bottom > &__title
     margin-bottom: 0
     &::before
       bottom: 25px
-      right: 50px
+      right: 15px
       transform: translate(100%, 100%)
 
   &_position_right-bottom.type-a > &__title

@@ -3,7 +3,7 @@ import Swiper from 'swiper';
 import { Navigation, EffectCreative } from 'swiper/modules';
 
 new Swiper('.swiper', {
-  speed: 1200,
+  speed: 1400,
   modules: [Navigation, EffectCreative],
   effect: "creative",
   creativeEffect: {

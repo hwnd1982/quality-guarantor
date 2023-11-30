@@ -4,11 +4,11 @@
   max-width: 275px
   &_position
     &_right-bottom
-      top: 45%
-      right: -180px
+      top: 43.5%
+      right: -148px
     &_left-top
       top: 89px
-      left: -42%
+      left: -51%
     &_left-bottom
       bottom: 180px
       left: -42%
@@ -18,6 +18,7 @@
       background-image: url(../img/line-left-top-type-a.svg#xl)
       width: 256px
       height: 58px
+
   &_position_left-top.type-b > &__title
     &::before
       background-image: url(../img/line-left-top-type-b.svg#xl)
@@ -27,8 +28,8 @@
   &_position_left-top > &__title
     margin-bottom: 16px
     &::before
-      bottom: 18px
-      right: 118px
+      bottom: 22px
+      right: 100px
       transform: translate(100%, 100%)
 
   &_position_left-bottom.type-a > &__title
@@ -50,17 +51,17 @@
 
   &_position_right-bottom > &__title
     &::before
-      bottom: 18px
-      left: -18px
+      bottom: 14px
+      left: -22px
       width: 146px
       height: 69px
       transform: translateX(-100%)
 
   &__title
     position: relative
-    font-size: 32px
+    font-size: 36px
     font-weight: 700
-    line-height: 1.125
+    line-height: calc(40 / 36)
     margin: 0 0 4px
     &::before
       content: ''
@@ -69,8 +70,8 @@
       background-repeat: no-repeat
 
   &__subtitle
-    font-size: 20px
-    line-height: 1.4
+    font-size: 24px
+    line-height: calc(32 / 24)
     margin: 0 0 16px
   &__list
     list-style: none
@@ -78,6 +79,9 @@
     margin: 0
     +space-v(4px)
   &__item
+    font-size: 24px
+    line-height: calc(32 / 24)
+    vertical-align: baseline
     &::before
       content: ''
       display: inline-block
@@ -85,5 +89,6 @@
       background-size: contain
       background-repeat: no-repeat
       width: 14px
-      height: 12px
-      margin-right: 12px
+      height: 16px
+      margin-right: 11px
+      vertical-align: bottom

@@ -1,16 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      g {
-        display: none;
-      }
-
-      g:target {
-        display: block;
-      }
-    </style>
-  </defs>
-  <g
+  <symbol
     viewBox="0 0 197 77"
     fill="none"
     id="xl"
@@ -22,8 +11,8 @@
       stroke-width="2"
       stroke-dasharray="8 9"
     />
-  </g>
-  <g
+  </symbol>
+  <symbol
     viewBox="0 0 157 77"
     fill="none"
     id="lg"
@@ -35,5 +24,5 @@
       stroke-width="2"
       stroke-dasharray="8 9"
     />
-  </g>
+  </symbol>
 </svg>

@@ -1,86 +1,94 @@
 .info-box
   position: absolute
   text-align: left
-  max-width: 275px
+  max-width: 27.5rem
   transition: 0.8s
+  opacity: 0
+
   &_position
     &_right-bottom
       top: 39.5%
       right: 20.7%
     &_left-top
-      top: 89px
+      top: 8.9rem
       left: 8.5%
     &_left-bottom
       bottom: 40%
       left: 8.5%
+  & .line-wrap
+    position: absolute
+    display: block
+    overflow: hidden
+    transition: 0.8s
+    width: 0
 
-  &_position_left-top.type-a > &__title
-    &::before
-      background-image: url(../img/line-left-top-type-a.svg#xl)
-      width: 256px
-      height: 58px
-
-  &_position_left-top.type-b > &__title
-    &::before
-      background-image: url(../img/line-left-top-type-b.svg#xl)
-      width: 197px
-      height: 77px
-
-  &_position_left-top > &__title
-    margin-bottom: 16px
-    &::before
-      bottom: 22px
-      right: 100px
+  &_position_left-top
+    & .line
+      float: left
+    & .line-wrap
+      bottom: 2.2rem
+      right: 10.0rem
       transform: translate(100%, 100%)
 
-  &_position_left-bottom.type-a > &__title
-    &::before
-      background-image: url(../img/line-left-bottom-type-a.svg#xl)
-      width: 257px
-      height: 78px
+    &.type-a
+      & .line
+        width: 25.6rem
+        height: 5.8rem
 
-  &_position_left-bottom > &__title
-    margin-bottom: 0
-    &::before
-      bottom: 25px
-      right: 15px
+    &.type-b
+      & .line
+        width: 19.7rem
+        height: 7.7rem
+
+  &_position_left-bottom
+    & .line
+      float: left
+    & .line-wrap
+      bottom: 2.5rem
+      right: 1.5rem
       transform: translate(100%, 100%)
 
-  &_position_right-bottom.type-a > &__title
-    &::before
-      background-image: url(../img/line-right-bottom-type-a.svg#xl)
+    &.type-a
+      & .line
+        width: 33.7rem
+        height: 7.8rem
 
-  &_position_right-bottom > &__title
-    &::before
-      bottom: 14px
-      left: -22px
-      width: 146px
-      height: 69px
+  &_position_right-bottom
+    & .line
+      float: right
+    & .line-wrap
+      bottom: 1.4rem
+      left: -2.2rem
       transform: translateX(-100%)
+
+    &.type-a
+      & .line
+        width: 14.6rem
+        height: 6.9rem
 
   &__title
     position: relative
-    font-size: 36px
+    font-size: 3.6rem
     font-weight: 700
     line-height: calc(40 / 36)
-    margin: 0 0 4px
-    &::before
-      content: ''
-      position: absolute
-      background-size: contain
-      background-repeat: no-repeat
+    margin: 0
+  &_position_right-bottom > &__title
+    margin-bottom: 0.4rem
+  &_position_left-top > &__title
+    margin-bottom: 1.6rem
 
   &__subtitle
-    font-size: 24px
+    font-size: 2.4rem
     line-height: calc(32 / 24)
-    margin: 0 0 16px
+    margin: 0 0 1.6rem
+
   &__list
     list-style: none
     padding: 0
     margin: 0
-    +space-v(4px)
+    +space-v(.4rem)
   &__item
-    font-size: 24px
+    font-size: 2.4rem
     line-height: calc(32 / 24)
     vertical-align: baseline
     &::before
@@ -89,7 +97,7 @@
       background-image: url(../img/check.svg)
       background-size: contain
       background-repeat: no-repeat
-      width: 14px
-      height: 16px
-      margin-right: 11px
+      width: 1.4rem
+      height: 1.6rem
+      margin-right: 1.1rem
       vertical-align: bottom

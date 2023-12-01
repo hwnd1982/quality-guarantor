@@ -1,5 +1,5 @@
 .hero
-  padding: 104px 0 40px
+  padding: 10.4rem 0 4.0rem
   overflow: hidden
   &__swiper
     display: flex
@@ -9,12 +9,12 @@
   &__link
     display: flex
     align-items: center
-    min-height: 72px
+    min-height: 7.2rem
 
 .swiper-controls
   position: absolute
   height: 0
-  top: 332px
+  top: 33.2rem
   left: 0
   right: 0
   display: flex
@@ -35,27 +35,36 @@
   &-wrap
     position: relative
     overflow: hidden
-    width: 120px
-    height: 43px
+    width: 12.0rem
+    height: 4.3rem
     transition: .3s
   &:active > &-wrap
-    width: 80px
+    width: 8.0rem
   &-icon
     position: absolute
     top: 50%
     transform: translateY(-50%)
-    width: 120px
-    height: 43px
+    width: 12.0rem
+    height: 4.3rem
     z-index: 50
   &::after
     position: absolute
     top: 50%
     content: ''
-    height: 325px
-    width: 325px
+    height: 32.5rem
+    width: 32.5rem
     background-color: #F4F2EF
     border-radius: 50%
     z-index: 1
+    transition: .3s
+  &::before
+    position: absolute
+    top: 50%
+    content: ''
+    height: 32.5rem
+    width: 32.5rem
+    z-index: 50
+    border-radius: 50%
     transition: .3s
 
 .swiper-btn-left .swiper-btn-icon
@@ -64,17 +73,17 @@
   right: 0
 
 .swiper-btn-left
-  &::after
+  &::after, &::before
     left: 50%
     transform: translate(-107%, -50%)
   &:active
-    &::after
+    &::after, &::before
       transform: scale(.6) translate(-135%, -83.3333%)
 
 .swiper-btn-right
-  &::after
+  &::after, &::before
     right: 50%
     transform: translate(107%, -50%)
   &:active
-    &::after
+    &::after, &::before
       transform: scale(.6) translate(135%, -83.3333%)

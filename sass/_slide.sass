@@ -1,13 +1,13 @@
 .slide
-  padding-bottom: 72px
+  padding-bottom: 7.2rem
   text-align: center
-  min-height: 700px
+  min-height: 70.0rem
   z-index: -1
   &__title
     position: absolute
-    font-size: 124px
+    font-size: 12.4rem
     font-weight: 700
-    top: 27px
+    top: 2.7rem
     left: 91.3%
     transform: translateX(-100%)
     line-height: 1
@@ -27,8 +27,8 @@
     &-wrap
       display: inline-block
       position: relative
-      width: 688px
-      height: 688px
+      width: 68.8rem
+      height: 68.8rem
       vertical-align: middle
       &::after
         content: ''
@@ -92,13 +92,30 @@
           transform: scale(1) translate(-50%, -50%)
 
   & .info-box
+    opacity: 1
+    & .line-wrap
+      transition: 0.8s 0.4s
     &_position
       &_right-bottom
-        right: 20.7%
+        &.type-a
+          & .line-wrap
+            width: 14.6rem
+
       &_left-top
         left: 8.5%
+        &.type-a
+          & .line-wrap
+            width: 25.6rem
+        &.type-b
+          & .line-wrap
+            width: 19.7rem
+
       &_left-bottom
         left: 8.5%
+        &.type-a
+          & .line-wrap
+            width: 33.7rem
 
   & .made-in
+    opacity: 1
     left: 17.25%

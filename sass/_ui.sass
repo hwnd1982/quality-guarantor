@@ -12,8 +12,8 @@
   font-weight: 700
   line-height: 1.25
   text-transform: uppercase
-  border-radius: 40px
-  border: 1px solid #2E70F0
+  border-radius: 4.0rem
+  border: .1rem solid #2E70F0
   transition: .3s
   cursor: pointer
   &:hover
@@ -25,33 +25,33 @@
     background-color: #0C1F45
     border-color: #0C1F45
 
-.main
-  color: #2E70F0
-  background-color: #fff0
+  &.main
+    color: #2E70F0
+    background-color: #fff0
 
-.prime
-  color: #fff
-  background-color: #2E70F0
+  &.prime
+    color: #fff
+    background-color: #2E70F0
 
-.black
-  color: #fff
-  background-color: #000
-  border-color: #000
+  &.black
+    color: #fff
+    background-color: #000
+    border-color: #000
 
 .color
-  width: 40px
-  height: 40px
-  padding: 4px
+  width: 4.0rem
+  height: 4.0rem
+  padding: .4rem
   appearance: none
   border-radius: 50%
   &::after
     content: ''
     display: block
-    width: 32px
-    height: 32px
+    width: 3.2rem
+    height: 3.2rem
     color: #E5E2D7
     border-radius: 50%
-    box-shadow: 0 0 0 2.5px white, 0 0 0 3.5px currentColor
+    box-shadow: 0 0 0 .25rem white, 0 0 0 .35rem currentColor
     transition: .3s
   &:hover::after
     color: #2E70F0
@@ -85,6 +85,10 @@
 .white
   &::after
     +color(#ECEAE4)
+
+.pearl
+  &::after
+    +color(#D2990A)
 
 .red
   &::after
